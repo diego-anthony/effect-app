@@ -1,0 +1,10 @@
+<div class="card-columns">
+    <div class="card" *ngFor="let item of usuarios">
+      <img [src]="item.avatar" class="card-img-top" [alt]="item.first_name">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.first_name}} {{ item.last_name }}</h5>
+        <p class="card-text">This is a longer card with supporting text </p>
+        <p class="card-text text-muted">Id: {{ item.id }}</p>
+      </div>
+    </div>
+  </div>
